@@ -3,7 +3,7 @@ import MyInput from './UI/input/MyInput';
 import MyButton from './UI/button/MyButton';
 
 const PostForm = ({create, remove}) => {
-  const [post, setPost] = useState({ title: '', description: ''});
+  const [post, setPost] = useState({ title: '', body: ''});
 
   const addNewPost = (e) => {
     e.preventDefault();
@@ -11,7 +11,7 @@ const PostForm = ({create, remove}) => {
       ...post, id: Date.now()
     }
     create(newPost)
-    setPost({ title: '', description: ''})
+    setPost({ title: '', body: ''})
   }
 
 
@@ -29,8 +29,8 @@ const PostForm = ({create, remove}) => {
       <MyInput
         type="text"
         placeholder="Post Description"
-        value={post.description}
-        onChange={(e) => setPost({...post, description: e.target.value})}
+        value={post.body}
+        onChange={(e) => setPost({...post, body: e.target.value})}
       />
 
       {/*Uncontrolled input*/}

@@ -8,11 +8,7 @@ import MyButton from './components/UI/button/MyButton';
 import {usePosts} from './hooks/usePosts';
 
 function App() {
-  const [posts, setPosts] = useState([
-    {id: 1, title: 'Greetings', description: 'hello'},
-    {id: 2, title: 'Talk', description: 'blah'},
-    {id: 3, title: 'Do', description: 'walk'},
-  ]);
+  const [posts, setPosts] = useState([]);
 
   const [filter, setFilter] = useState({sort: '', query: ''})
   const [modal, setModal] = useState(false)

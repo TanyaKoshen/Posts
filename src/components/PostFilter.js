@@ -16,7 +16,7 @@ const PostFilter = ({filter, setFilter}) => {
         defaultValue="Sort By..."
         options={[
           {value: 'title', name: 'By name'},
-          {value: 'description', name: 'By description'},
+          {value: 'body', name: 'By description'},
         ]}
       />
     </div>
