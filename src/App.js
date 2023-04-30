@@ -33,7 +33,7 @@ function App() {
 
   useEffect(() => {
     fetchPosts()
-  }, [])
+  }, [filter])
   return (
     <div className="App">
 
